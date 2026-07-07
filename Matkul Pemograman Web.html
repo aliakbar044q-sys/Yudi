@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- META: Mengatur set karakter dan tampilan agar responsif di semua perangkat -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE: Judul yang muncul di tab browser -->
+    <title>Ali Akbar | Portfolio</title>
+
+    <!-- FONT: Mengambil font Poppins dari Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+
+    <!-- ICON: Mengambil library FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        /* ROOT: Menyimpan variabel warna dan ukuran agar mudah diubah-ubah */
+        :root {
+            --bg: #040815;
+            --card: rgba(18, 28, 48, .55);
+            --primary: #5c79ff;
+            --secondary: #b55dff;
+            --text: #fff;
+            --soft: #b6c0db;
+            --border: rgba(255, 255, 255, .08);
+            --container: 1280px;
+        }
+
+        /* RESET: Menghilangkan margin/padding bawaan browser agar layout rapi */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* HTML: Mengaktifkan efek scroll halus */
+        html { scroll-behavior: smooth; }
+
+        /* BODY: Mengatur background gradasi dan font utama */
+        body {
+            background: radial-gradient(circle at top, #08152d, #040815);
+            color: var(--text);
+            font-family: "Poppins", sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* CONTAINER: Menjaga konten tetap di tengah dan tidak terlalu lebar */
+        .container { width: min(92%, var(--container)); margin: auto; }
+
+        /* NAVBAR: Mengatur posisi menu agar tetap di atas (sticky) */
+        nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 999; backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
+        .navbar { height: 85px; display: flex; justify-content: space-between; align-items: center; }
+
+        /* LOGO: Mengatur tampilan nama/logo di kiri */
+        .logo { display: flex; align-items: center; gap: 14px; }
+        .logo-mark { font-size: 2rem; font-weight: 800; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; color: transparent; }
+        .logo-name { font-size: 1.15rem; font-weight: 700; }
+
+        /* MENU: Mengatur link navigasi */
+        .menu { display: flex; gap: 42px; }
+        .menu a { color: white; text-decoration: none; transition: .3s; }
+        .menu a:hover { color: var(--secondary); }
+
+        /* BUTTON: Mengatur tombol download CV */
+        .cv-btn { padding: 14px 26px; border-radius: 14px; text-decoration: none; color: white; border: 1px solid var(--primary); }
+        .cv-btn:hover { background: rgba(92, 121, 255, .15); }
+
+        /* RESPONSIVE: Menyembunyikan menu di layar HP */
+        @media (max-width: 900px) { .menu, .cv-btn { display: none; } }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR: Bagian atas website -->
+    <nav>
+        <div class="container navbar">
+            <div class="logo">
+                <div class="logo-mark">AA</div>
+                <div class="logo-name">Ali Akbar</div>
+            </div>
+
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang</a>
+                <a href="#journey">Perjalanan</a>
+                <a href="#skill">Skill</a>
+                <a href="#project">Proyek</a>
+                <a href="#certificate">Sertifikat</a>
+                <a href="#contact">Kontak</a>
+            </div>
+
+            <a href="#" class="cv-btn">Download CV</a>
+        </div>
+    </nav>
+
+    <!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- META: Mengatur set karakter dan tampilan agar responsif di semua perangkat -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE: Judul yang muncul di tab browser -->
+    <title>Ali Akbar | Portfolio</title>
+
+    <!-- FONT: Mengambil font Poppins dari Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+
+    <!-- ICON: Mengambil library FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        /* ROOT: Menyimpan variabel warna dan ukuran agar mudah diubah-ubah */
+        :root {
+            --bg: #040815;
+            --card: rgba(18, 28, 48, .55);
+            --primary: #5c79ff;
+            --secondary: #b55dff;
+            --text: #fff;
+            --soft: #b6c0db;
+            --border: rgba(255, 255, 255, .08);
+            --container: 1280px;
+        }
+
+        /* RESET: Menghilangkan margin/padding bawaan browser agar layout rapi */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* HTML: Mengaktifkan efek scroll halus */
+        html { scroll-behavior: smooth; }
+
+        /* BODY: Mengatur background gradasi dan font utama */
+        body {
+            background: radial-gradient(circle at top, #08152d, #040815);
+            color: var(--text);
+            font-family: "Poppins", sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* CONTAINER: Menjaga konten tetap di tengah dan tidak terlalu lebar */
+        .container { width: min(92%, var(--container)); margin: auto; }
+
+        /* NAVBAR: Mengatur posisi menu agar tetap di atas (sticky) */
+        nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 999; backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
+        .navbar { height: 85px; display: flex; justify-content: space-between; align-items: center; }
+
+        /* LOGO: Mengatur tampilan nama/logo di kiri */
+        .logo { display: flex; align-items: center; gap: 14px; }
+        .logo-mark { font-size: 2rem; font-weight: 800; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; color: transparent; }
+        .logo-name { font-size: 1.15rem; font-weight: 700; }
+
+        /* MENU: Mengatur link navigasi */
+        .menu { display: flex; gap: 42px; }
+        .menu a { color: white; text-decoration: none; transition: .3s; }
+        .menu a:hover { color: var(--secondary); }
+
+        /* BUTTON: Mengatur tombol download CV */
+        .cv-btn { padding: 14px 26px; border-radius: 14px; text-decoration: none; color: white; border: 1px solid var(--primary); }
+        .cv-btn:hover { background: rgba(92, 121, 255, .15); }
+
+        /* RESPONSIVE: Menyembunyikan menu di layar HP */
+        @media (max-width: 900px) { .menu, .cv-btn { display: none; } }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR: Bagian atas website -->
+    <nav>
+        <div class="container navbar">
+            <div class="logo">
+                <div class="logo-mark">AA</div>
+                <div class="logo-name">Ali Akbar</div>
+            </div>
+
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang</a>
+                <a href="#journey">Perjalanan</a>
+                <a href="#skill">Skill</a>
+                <a href="#project">Proyek</a>
+                <a href="#certificate">Sertifikat</a>
+                <a href="#contact">Kontak</a>
+            </div>
+
+            <a href="#" class="cv-btn">Download CV</a>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         HERO: Bagian Home dengan tempat untuk Foto Profil
+    ========================================== -->
+    <style>
+        .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 120px; }
+        .hero-wrap { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 90px; }
+
+        /* KIRI: Teks perkenalan */
+        .hero-left { display: flex; flex-direction: column; gap: 22px; }
+        .hero-tag { color: var(--secondary); font-size: 1.2rem; font-weight: 500; }
+        .hero-title { font-size: clamp(3.4rem, 8vw, 6rem); line-height: 1; }
+        .hero-job { font-size: 2rem; color: var(--primary); font-weight: 600; }
+        .hero-desc { max-width: 600px; color: var(--soft); line-height: 2; }
+
+        /* SOSIAL: Ikon link media sosial */
+        .social { display: flex; gap: 16px; }
+        .social a { width: 58px; height: 58px; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; border-radius: 50%; border: 1px solid var(--border); transition: .3s; }
+        .social a:hover { transform: translateY(-4px); border-color: var(--primary); }
+
+        /* TOMBOL: Aksi utama */
+        .hero-btn { display: flex; gap: 20px; }
+        .btn { padding: 18px 34px; border-radius: 18px; text-decoration: none; transition: .3s; }
+        .btn-primary { color: white; background: linear-gradient(90deg, var(--primary), var(--secondary)); }
+        .btn-outline { color: white; border: 1px solid var(--secondary); }
+        .btn:hover { transform: translateY(-4px); }
+
+        /* KANAN: Tempat Foto Profil */
+        .hero-right { display: flex; justify-content: center; }
+        .profile-img { 
+            width: 450px; 
+            height: 450px; 
+            border-radius: 50%; 
+            object-fit: cover; /* Agar foto tidak gepeng */
+            border: 5px solid var(--primary); 
+            box-shadow: 0px 0px 30px rgba(92, 121, 255, 0.3);
+        }
+
+        /* RESPONSIVE: Pengaturan untuk layar HP */
+        @media (max-width: 980px) {
+            .hero-wrap { grid-template-columns: 1fr; text-align: center; }
+            .hero-left { align-items: center; }
+            .hero-btn, .social { justify-content: center; }
+            .profile-img { width: 300px; height: 300px; }
+        }
+    </style>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-wrap">
+                <!-- KIRI: Nama dan Deskripsi -->
+                <div class="hero-left">
+                    <div class="hero-tag">Halo, Saya</div>
+                    <h1 class="hero-title">Ali Akbar</h1>
+                    <div class="hero-job">Mahasiswa Teknologi Informasi</div>
+                    <p class="hero-desc">
+                        Saya tertarik pada cybersecurity, computer network, web development, 
+                        serta eksplorasi teknologi melalui pembelajaran dan pengalaman praktik.
+                    </p>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+
+                    <div class="hero-btn">
+                        <a href="#project" class="btn btn-primary">Lihat Proyek</a>
+                        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+                    </div>
+                </div>
+
+                <!-- KANAN: Foto Profil Anda -->
+                <div class="hero-right">
+                    <!-- Ganti 'foto-profil.jpg' dengan nama file foto Anda yang ada di folder yang sama -->
+                    <img src="C:\Users\user\OneDrive\Gambar\foto.jpeg" alt="Ali Akbar" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ==========================================
+         ABOUT: Bagian Tentang Saya (Profil Lengkap)
+    ========================================== -->
+    <style>
+        .about { padding: 120px 0; }
+        .about-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        
+        /* IMAGE BOX: Mengatur ukuran foto agar lebih pas */
+        .about-image { display: flex; justify-content: center; }
+        .about-image img { 
+            width: 350px;       /* Mengatur lebar foto agar tidak terlalu besar */
+            height: 350px;      /* Mengatur tinggi foto */
+            object-fit: cover;  /* Memastikan foto tetap proporsional */
+            border-radius: 20px; 
+            border: 4px solid var(--card); 
+        }
+        
+        /* TEXT BOX: Styling untuk paragraf tentang diri */
+        .about-text h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .about-text p { color: var(--soft); line-height: 1.8; margin-bottom: 20px; }
+        
+        @media (max-width: 900px) {
+            .about-wrap { grid-template-columns: 1fr; text-align: center; }
+            .about-image img { width: 280px; height: 280px; } /* Ukuran lebih kecil untuk HP */
+        }
+    </style>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrap">
+                <!-- KIRI: Foto Diri -->
+                <div class="about-image">
+                    <!-- Pastikan nama file sesuai dengan file foto Anda -->
+                    <img src="C:\Users\user\OneDrive\Gambar\foto.jpeg" alt="Ali Akbar">
+                </div>
+
+                <!-- KANAN: Deskripsi Diri -->
+                <div class="about-text">
+                    <h2>Tentang Saya</h2>
+                    <div class="line" style="margin-left: 0;"></div>
+                    <p>
+                        Halo! Saya Ali Akbar, seorang mahasiswa Teknologi Informasi yang memiliki ketertarikan mendalam 
+                        pada dunia *Cybersecurity* dan *Web Development*. Saya selalu antusias untuk mempelajari 
+                        teknologi baru dan mengaplikasikannya dalam proyek nyata.
+                    </p>
+                    <p>
+                        Selama masa kuliah, saya aktif mengikuti berbagai pelatihan dan sertifikasi untuk meningkatkan 
+                        skill praktis saya. Saya percaya bahwa kombinasi antara teori akademik dan pengalaman 
+                        praktik adalah kunci untuk menjadi seorang profesional di bidang IT.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         JOURNEY: Menampilkan riwayat perjalanan/pengalaman
+    ========================================== -->
+    <style>
+        .journey { padding: 120px 0; }
+        
+        /* JUDUL SECTION: Menyamakan style untuk semua judul section */
+        .section-title { text-align: center; margin-bottom: 70px; }
+        .section-title h2 { font-size: 2.6rem; }
+        .line { width: 80px; height: 4px; margin: 16px auto; border-radius: 20px; background: linear-gradient(90deg, var(--primary), var(--secondary)); }
+
+        /* TIMELINE: Mengatur grid 5 kolom untuk 5 tahapan perjalanan */
+        .timeline { position: relative; display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
+        
+        /* GARIS PENGHUBUNG: Garis horizontal di belakang ikon menggunakan pseudo-element */
+        .timeline::before { content: ""; position: absolute; top: 38px; left: 10%; width: 80%; height: 2px; background: rgba(255, 255, 255, .18); }
+        
+        /* STEP: Wadah setiap tahapan/item perjalanan */
+        .step { position: relative; text-align: center; }
+        
+        /* IKON: Wadah lingkaran untuk ikon FontAwesome */
+        .step-icon { width: 78px; height: 78px; margin: 0 auto 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; background: rgba(255, 255, 255, .03); border: 1px solid var(--border); color: var(--primary); position: relative; z-index: 2; }
+        
+        /* TAHUN: Styling teks tahun */
+        .step-year { color: var(--secondary); font-size: 1.4rem; font-weight: 700; margin-bottom: 10px; }
+        
+        /* JUDUL TAHAP: Styling teks nama aktivitas */
+        .step-title { font-size: 1.3rem; margin-bottom: 12px; }
+        
+        /* DESKRIPSI: Styling teks penjelasan singkat */
+        .step-desc { color: var(--soft); line-height: 1.8; font-size: .95rem; }
+
+        /* RESPONSIVE: Mengubah layout menjadi 1 kolom saat di layar HP */
+        @media (max-width: 980px) {
+            .timeline { grid-template-columns: 1fr; }
+            .timeline::before { display: none; }
+        }
+    </style>
+
+    <section id="journey" class="journey">
+        <div class="container">
+            <!-- Judul Section -->
+            <div class="section-title">
+                <h2>Perjalanan Saya</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- STEP 1: Masuk TI -->
+                <div class="step">
+                    <div class="step-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="step-year">2024</div>
+                    <div class="step-title">Masuk TI</div>
+                    <div class="step-desc">Memulai perjalanan sebagai mahasiswa Teknologi Informasi.</div>
+                </div>
+
+                <!-- STEP 2: Belajar Web -->
+                <div class="step">
+                    <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="step-year">2024</div>
+                    <div class="step-title">Belajar Web</div>
+                    <div class="step-desc">Belajar HTML, CSS, JavaScript dan membangun website pertama.</div>
+                </div>
+
+                <!-- STEP 3: Belajar Flutter -->
+                <div class="step">
+                    <div class="step-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <div class="step-year">2025</div>
+                    <div class="step-title">Belajar Flutter</div>
+                    <div class="step-desc">Mulai memahami pengembangan aplikasi mobile.</div>
+                </div>
+
+                <!-- STEP 4: Pelatihan BLK -->
+                <div class="step">
+                    <div class="step-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <div class="step-year">2025</div>
+                    <div class="step-title">Pelatihan BLK</div>
+                    <div class="step-desc">Pelatihan instalasi listrik bangunan selama 30 hari.</div>
+                </div>
+
+                <!-- STEP 5: Bangun Portfolio -->
+                <div class="step">
+                    <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="step-year">2026</div>
+                    <div class="step-title">Bangun Portfolio</div>
+                    <div class="step-desc">Membangun website untuk menunjukkan kemampuan profesional.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SKILL: Menampilkan kemampuan teknis dengan progress bar
+    ========================================== -->
+    <style>
+        .skill { padding: 120px 0; }
+        
+        /* SKILL-GRID: Membagi skill menjadi 2 kolom untuk tampilan desktop */
+        .skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+
+        /* SKILL-ITEM: Wadah untuk setiap satu baris skill */
+        .skill-item { margin-bottom: 34px; }
+        
+        /* SKILL-HEAD: Mengatur posisi judul skill dan persentasenya secara sejajar */
+        .skill-head { display: flex; align-items: center; justify-content: space-between; }
+        
+        /* SKILL-LEFT: Mengatur posisi ikon dan nama skill di sebelah kiri */
+        .skill-left { display: flex; align-items: center; gap: 16px; }
+        .skill-icon { font-size: 2rem; }
+        .skill-name { font-size: 1.2rem; font-weight: 600; }
+        .skill-percent { color: var(--text); font-weight: 700; }
+
+        /* SKILL-BAR: Wadah latar belakang progress bar */
+        .skill-bar { width: 100%; height: 10px; margin-top: 16px; border-radius: 999px; background: rgba(255, 255, 255, .08); overflow: hidden; }
+        
+        /* SKILL-FILL: Bagian isi bar yang memberikan efek visual progres */
+        .skill-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--primary), var(--secondary)); }
+
+        /* WIDTH: Menentukan lebar bar sesuai dengan persentase */
+        .html { width: 90%; }
+        .css { width: 85%; }
+        .flutter { width: 75%; }
+        .mysql { width: 70%; }
+        .js { width: 70%; }
+        .git { width: 60%; }
+
+        /* RESPONSIVE: Mengubah layout jadi 1 kolom di layar kecil */
+        @media (max-width: 900px) {
+            .skill-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+
+    <section id="skill" class="skill">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skill Saya</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="skill-grid">
+                <!-- KOLOM KIRI -->
+                <div>
+                    <!-- HTML -->
+                    <div class="skill-item">
+                        <div class="skill-head">
+                            <div class="skill-left">
+                                <div class="skill-icon"><i class="fa-brands fa-html5" style="color:#ff6b35"></i></div>
+                                <div class="skill-name">HTML</div>
+                            </div>
+                            <div class="skill-percent">90%</div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill html"></div></div>
+                    </div>
+
+                    <!-- FLUTTER -->
+                    <div class="skill-item">
+                        <div class="skill-head">
+                            <div class="skill-left">
+                                <div class="skill-icon"><i class="fa-brands fa-flutter" style="color:#41c6ff"></i></div>
+                                <div class="skill-name">Flutter</div>
+                            </div>
+                            <div class="skill-percent">75%</div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill flutter"></div></div>
+                    </div>
+                </div>
+
+                <!-- KOLOM KANAN -->
+                <div>
+                    <!-- CSS -->
+                    <div class="skill-item">
+                        <div class="skill-head">
+                            <div class="skill-left">
+                                <div class="skill-icon"><i class="fa-brands fa-css3-alt" style="color:#3ea6ff"></i></div>
+                                <div class="skill-name">CSS</div>
+                            </div>
+                            <div class="skill-percent">85%</div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill css"></div></div>
+                    </div>
+
+                    <!-- MYSQL -->
+                    <div class="skill-item">
+                        <div class="skill-head">
+                            <div class="skill-left">
+                                <div class="skill-icon"><i class="fa-solid fa-database" style="color:#58d6ff"></i></div>
+                                <div class="skill-name">MySQL</div>
+                            </div>
+                            <div class="skill-percent">70%</div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill mysql"></div></div>
+                    </div>
+
+                    <!-- JAVASCRIPT -->
+                    <div class="skill-item">
+                        <div class="skill-head">
+                            <div class="skill-left">
+                                <div class="skill-icon"><i class="fa-brands fa-js" style="color:#ffd43b"></i></div>
+                                <div class="skill-name">JavaScript</div>
+                            </div>
+                            <div class="skill-percent">70%</div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill js"></div></div>
+                    </div>
+
+                    <!-- GIT & GITHUB -->
+                    <div class="skill-item">
+                        <div class="skill-head">
+                            <div class="skill-left">
+                                <div class="skill-icon"><i class="fa-brands fa-git-alt" style="color:#ff6533"></i></div>
+                                <div class="skill-name">Git & GitHub</div>
+                            </div>
+                            <div class="skill-percent">60%</div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill git"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECT: Menampilkan kartu proyek dengan link dan deskripsi
+    ========================================== -->
+    <style>
+        .project { padding: 120px 0; }
+
+        /* HEAD: Mengatur judul dan tombol 'Lihat Semua' di kanan */
+        .project-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 60px; }
+        .more-btn { padding: 14px 26px; color: white; text-decoration: none; border-radius: 14px; border: 1px solid var(--border); }
+        .more-btn:hover { border-color: var(--primary); }
+
+        /* GRID: Mengatur tampilan 3 kolom untuk kartu proyek */
+        .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; }
+
+        /* CARD: Wadah setiap proyek */
+        .project-card { background: var(--card); border: 1px solid var(--border); border-radius: 24px; overflow: hidden; transition: .3s; }
+        .project-card:hover { transform: translateY(-8px); }
+
+        /* IMAGE: Area placeholder gambar (bisa diganti dengan tag <img> nantinya) */
+        .project-image { height: 220px; background: linear-gradient(135deg, #162450, #0a1324); display: flex; justify-content: center; align-items: center; font-size: 1rem; color: var(--soft); }
+
+        /* BODY: Isi teks dalam kartu */
+        .project-body { padding: 26px; }
+        .project-title { font-size: 1.4rem; margin-bottom: 14px; }
+        .project-desc { color: var(--soft); line-height: 1.8; }
+
+        /* FOOTER: Mengatur posisi tag dan ikon link */
+        .project-footer { margin-top: 26px; display: flex; justify-content: space-between; align-items: center; }
+        .tags { display: flex; flex-wrap: wrap; gap: 10px; }
+        .tag { padding: 8px 14px; font-size: .8rem; border-radius: 999px; background: rgba(92, 121, 255, .15); }
+        .project-link { display: flex; gap: 14px; }
+        .project-link i { color: white; font-size: 1.2rem; }
+
+        /* RESPONSIVE: Mengatur tampilan di layar HP/tablet */
+        @media (max-width: 1000px) {
+            .project-grid { grid-template-columns: 1fr; }
+            .project-head { flex-direction: column; gap: 20px; }
+        }
+    </style>
+
+    <section id="project" class="project">
+        <div class="container">
+            <div class="project-head">
+                <div class="section-title">
+                    <h2>Proyek Saya</h2>
+                    <div class="line"></div>
+                </div>
+                <a href="#" class="more-btn">Lihat Semua Proyek</a>
+            </div>
+
+            <div class="project-grid">
+                <!-- CARD 1 -->
+                <div class="project-card">
+                    <div class="project-image">Website Portfolio</div>
+                    <div class="project-body">
+                        <div class="project-title">Interactive Portfolio Web</div>
+                        <div class="project-desc">Website portofolio mobile-first dengan tampilan futuristik.</div>
+                        <div class="project-footer">
+                            <div class="tags"><div class="tag">HTML</div><div class="tag">CSS</div><div class="tag">JS</div></div>
+                            <div class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i><i class="fa-brands fa-github"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="project-card">
+                    <div class="project-image">Network & Electrical</div>
+                    <div class="project-body">
+                        <div class="project-title">Infrastructure Project</div>
+                        <div class="project-desc">Perancangan jaringan, instalasi LAN, dan panel listrik.</div>
+                        <div class="project-footer">
+                            <div class="tags"><div class="tag">Network</div><div class="tag">Electrical</div></div>
+                            <div class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i><i class="fa-brands fa-github"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="project-card">
+                    <div class="project-image">Hardware Engineering</div>
+                    <div class="project-body">
+                        <div class="project-title">PC Assembly</div>
+                        <div class="project-desc">Perakitan komputer, troubleshooting, dan optimasi komponen.</div>
+                        <div class="project-footer">
+                            <div class="tags"><div class="tag">Hardware</div><div class="tag">Engineering</div></div>
+                            <div class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i><i class="fa-brands fa-github"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CERTIFICATE: Menampilkan sertifikat/pelatihan dalam bentuk kartu
+    ========================================== -->
+    <style>
+        .certificate { padding: 120px 0; }
+
+        /* GRID: Mengatur 4 kolom untuk tampilan desktop */
+        .cert-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+
+        /* CARD: Wadah setiap sertifikat dengan efek hover */
+        .cert-card { padding: 34px; background: var(--card); border: 1px solid var(--border); border-radius: 24px; transition: .3s; }
+        .cert-card:hover { transform: translateY(-8px); border-color: var(--primary); }
+
+        /* ICON: Wadah ikon sertifikat */
+        .cert-icon { width: 74px; height: 74px; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 28px; background: rgba(92, 121, 255, .12); }
+
+        /* TEKS: Styling judul dan deskripsi */
+        .cert-title { font-size: 1.3rem; margin-bottom: 14px; }
+        .cert-desc { color: var(--soft); line-height: 1.9; margin-bottom: 24px; }
+
+        /* FOOTER: Menampilkan jumlah sertifikat dan badge kategori */
+        .cert-footer { display: flex; justify-content: space-between; align-items: center; }
+        .cert-count { font-size: 1.8rem; font-weight: 700; }
+        .cert-badge { padding: 10px 16px; border-radius: 999px; background: rgba(181, 93, 255, .14); color: var(--secondary); }
+
+        /* RESPONSIVE: Mengatur perubahan kolom pada layar yang lebih kecil */
+        @media (max-width: 1100px) { .cert-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 700px) { .cert-grid { grid-template-columns: 1fr; } }
+    </style>
+
+    <section id="certificate" class="certificate">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sertifikat & Pelatihan</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="cert-grid">
+                <!-- CARD 1: BNSP -->
+                <div class="cert-card">
+                    <div class="cert-icon">🏅</div>
+                    <div class="cert-title">BNSP</div>
+                    <div class="cert-desc">Junior Network Admin, Junior Cybersecurity, Office Operator, Graphic Design, Digital Marketing</div>
+                    <div class="cert-footer">
+                        <div class="cert-count">6+</div>
+                        <div class="cert-badge">Professional</div>
+                    </div>
+                </div>
+
+                <!-- CARD 2: Universitas -->
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <div class="cert-title">Universitas</div>
+                    <div class="cert-desc">Cyber Security, Office Operator, Network, Website, Design, Administration</div>
+                    <div class="cert-footer">
+                        <div class="cert-count">10+</div>
+                        <div class="cert-badge">Campus</div>
+                    </div>
+                </div>
+
+                <!-- CARD 3: BLK -->
+                <div class="cert-card">
+                    <div class="cert-icon">⚡</div>
+                    <div class="cert-title">BLK & Training</div>
+                    <div class="cert-desc">Electrical, Hardware, Maintenance, Installation, Safety</div>
+                    <div class="cert-footer">
+                        <div class="cert-count">8+</div>
+                        <div class="cert-badge">Vocational</div>
+                    </div>
+                </div>
+
+                <!-- CARD 4: Global Learning -->
+                <div class="cert-card">
+                    <div class="cert-icon">🌍</div>
+                    <div class="cert-title">Global Learning</div>
+                    <div class="cert-desc">TryHackMe, Dunia Coding, Workshop, Cyber, Website</div>
+                    <div class="cert-footer">
+                        <div class="cert-count">10+</div>
+                        <div class="cert-badge">International</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT: Informasi kontak dan link sosial
+    ========================================== -->
+    <style>
+        .contact { padding: 120px 0; }
+        
+        /* WRAP: Mengatur grid antara form kontak dan info tambahan */
+        .contact-wrap { display: grid; grid-template-columns: 1.2fr .8fr; gap: 40px; }
+
+        /* CONTACT-CARD: Wadah kartu kontak utama */
+        .contact-card { padding: 40px; background: var(--card); border: 1px solid var(--border); border-radius: 28px; }
+        .contact-title { font-size: 2rem; margin-bottom: 18px; }
+        .contact-desc { color: var(--soft); line-height: 2; }
+        
+        /* CONTACT-LIST: Daftar cara menghubungi Anda */
+        .contact-list { margin-top: 40px; display: flex; flex-direction: column; gap: 18px; }
+        .contact-item { display: flex; align-items: center; gap: 18px; padding: 22px; border-radius: 18px; background: rgba(255, 255, 255, .03); }
+        .contact-icon { width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; background: rgba(92, 121, 255, .12); }
+        .contact-info h4 { margin-bottom: 6px; }
+        .contact-info p { color: var(--soft); }
+
+        /* INFO-PANEL: Panel samping untuk informasi tambahan (Fokus, Organisasi, IPK) */
+        .info-panel { display: flex; flex-direction: column; gap: 22px; }
+        .info-box { padding: 30px; border-radius: 24px; background: var(--card); border: 1px solid var(--border); }
+        .info-box h4 { margin-bottom: 14px; }
+        .info-box p { color: var(--soft); line-height: 1.8; }
+
+        /* FOOTER: Bagian paling bawah halaman */
+        footer { padding: 40px 0; border-top: 1px solid var(--border); }
+        .footer { display: flex; justify-content: space-between; align-items: center; }
+        .footer-text { color: var(--soft); }
+        .footer-social { display: flex; gap: 14px; }
+        .footer-social a { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; border: 1px solid var(--border); }
+
+        @media (max-width: 980px) {
+            .contact-wrap { grid-template-columns: 1fr; }
+            .footer { flex-direction: column; gap: 30px; }
+        }
+    </style>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Saya</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="contact-wrap">
+                <!-- KIRI: Informasi Kontak -->
+                <div class="contact-card">
+                    <div class="contact-title">Mari Terhubung</div>
+                    <div class="contact-desc">Terbuka untuk diskusi teknologi, kolaborasi, networking, dan eksplorasi proyek.</div>
+
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-info"><h4>Email</h4><p>Masukkan email Anda</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+                            <div class="contact-info"><h4>LinkedIn</h4><p>Tambahkan profil LinkedIn</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="contact-info"><h4>GitHub</h4><p>aliakbar044q-sys</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="contact-info"><h4>TryHackMe</h4><p>Ali Akbar</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KANAN: Detail Tambahan -->
+                <div class="info-panel">
+                    <div class="info-box"><h4>Fokus Saat Ini</h4><p>Cybersecurity, Network, Infrastructure, dan Web Development.</p></div>
+                    <div class="info-box"><h4>Organisasi</h4><p>Hima TI • HIPMI PT</p></div>
+                    <div class="info-box"><h4>IPK</h4><p>3.79 / 4.00</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-text">© 2026 Ali Akbar<br>Built with HTML • CSS</div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
